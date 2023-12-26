@@ -6,7 +6,7 @@ Laravel9をDockerで導入したテストレポジトリです。
 [Laravel9をDockerで導入してみよう!](https://zenn.dev/eguchi244_dev/articles/laravel-and-docker-introduction-20230822)
 
 ## 目的＆内容
-下記のシステム構成での実験やテストに使用することを目的にしています。
+下記のシステム構成での実験やテストに使用することを目的にしています。  
 この README は Github から環境構築するための手順を記載したものです。
 
 ## システム構成

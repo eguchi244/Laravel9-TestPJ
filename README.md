@@ -1,13 +1,13 @@
-# Laravel9テストレポジトリ
+# Laravelテンプレート
 
 ## 概要
-Laravel9をDockerで導入したテストレポジトリです。   
-具体的な内容は下記のZennの記事をご覧ください。  
+Laravel9をDockerで導入したテンプレートです。   
+下記のZennの記事によって構築されました。具体的な内容は記事を参照してください。  
 [Laravel9をDockerで導入してみよう!](https://zenn.dev/eguchi244_dev/articles/laravel-and-docker-introduction-20230822)
 
 ## 目的＆内容
-下記のシステム構成での実験やテストに使用することを目的にしています。  
-この README は Github から環境構築するための手順を記載したものです。
+下記のシステム構成でのテンプレートに使用することを目的にしています。  
+この README は Github からローカル環境に構築するための手順です。
 
 ## システム構成
 【システム構成】
@@ -21,7 +21,7 @@ Laravel9をDockerで導入したテストレポジトリです。
 
 【ディレクトリ構成】
 ```
-Laravel9-TestPJ（ルートディレクトリ）
+laravel9-build-template（ルートディレクトリ）
 ├── docker-compose.yml
 ├── docker 
 │   ├── php 
@@ -49,8 +49,8 @@ PCに下記がインストールと設定がされていること。
 
 1. GitHubよりプロジェクトをダウンロードする
 ```
-$ git clone https://github.com/eguchi244/Laravel9-TestPJ.git
-$ cd Laravel9-TestPJ
+$ git clone https://github.com/eguchi244/laravel9-build-template.git
+$ cd laravel9-build-template
 ```
 2. Dockerをビルドする
 ```
@@ -60,7 +60,7 @@ $ docker-compose up -d
 ```
 # PHPコンテナにログインする
 $ docker-compose exec php bash
-root@~# cd Laravel9TestProject
+root@~# cd laravel9-build-template
 # Composer（PHPパッケージ）をインストールしてVenderフォルダを作成する
 root@~# composer install
 # .env.example ファイルをコピーして .env ファイルを生成する
@@ -86,7 +86,7 @@ APP_PORT=8880
 ```
 # PHPコンテナにログインする
 $ docker-compose exec php bash
-root@~# cd Laravel9TestProject
+root@~# cd laravel9-build-template
 # キージェネレートする
 root@~# php artisan key:generate
 # PHPコンテナからログアウトする
@@ -96,7 +96,7 @@ root@~# exit
 ```
 # PHPコンテナにログインする
 $ docker-compose exec php bash
-root@~# cd Laravel9TestProject
+root@~# cd laravel9-build-template
 # migrationを実行する
 root@~# php artisan migrate:fresh
 # PHPコンテナからログアウトする
@@ -124,7 +124,7 @@ root@~# exit
 ## 動作確認
 1. ブラウザでLaravelのデフォルトページの表示を確認する  
 ブラウザに [http://localhost/](http://localhost/) でアクセスして表示されればOKです。
-2. phpMyAdmin（DB管理ツール）　の表示を確認する  
+2. phpMyAdmin（DB管理ツール）の表示を確認する  
 ブラウザに [http://localhost:8080](http://localhost:8080) でアクセスして表示されればOKです。
 
 以上です。

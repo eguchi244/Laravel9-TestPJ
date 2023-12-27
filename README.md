@@ -60,7 +60,7 @@ $ docker-compose up -d
 ```
 # PHPコンテナにログインする
 $ docker-compose exec php bash
-root@~# cd laravel9-build-template
+root@~# cd Laravel9TestProject
 # Composer（PHPパッケージ）をインストールしてVenderフォルダを作成する
 root@~# composer install
 # .env.example ファイルをコピーして .env ファイルを生成する
@@ -72,7 +72,7 @@ root@~# php artisan key:generate
 root@~# php artisan --version
 # 念の為に権限を与える
 # PermissionDeniedエラーがでる場合の対処方法
-root@~LaravelReactProject # chown www-data ./ -R
+root@~# chown www-data ./ -R
 # PHPコンテナからログアウトする
 root@~# exit
 ```
@@ -86,7 +86,7 @@ APP_PORT=8880
 ```
 # PHPコンテナにログインする
 $ docker-compose exec php bash
-root@~# cd laravel9-build-template
+root@~# cd Laravel9TestProject
 # キージェネレートする
 root@~# php artisan key:generate
 # PHPコンテナからログアウトする
@@ -96,7 +96,7 @@ root@~# exit
 ```
 # PHPコンテナにログインする
 $ docker-compose exec php bash
-root@~# cd laravel9-build-template
+root@~# cd Laravel9TestProject
 # migrationを実行する
 root@~# php artisan migrate:fresh
 # PHPコンテナからログアウトする

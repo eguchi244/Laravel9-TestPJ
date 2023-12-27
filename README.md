@@ -1,4 +1,4 @@
-# Laravelテンプレート
+# Laravel9テンプレート
 
 ## 概要
 Laravel9をDockerで導入したテンプレートです。   
@@ -12,7 +12,7 @@ Laravel9をDockerで導入したテンプレートです。
 ## システム構成
 【システム構成】
 * フレームワーク ： Laravel Framework 9.x.x
-* フロントエンドフレームワーク ： LaravelVite
+* フロントエンドビルドツール ： LaravelVite
 * データベース ： MYSQL 5.7.36
 * DB管理ツール ： phpMyAdmin latest
 * PHP ： PHP 8.0.x
